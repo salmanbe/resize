@@ -1,13 +1,15 @@
 Perfect Image Resize
 ====
-This easy to use library uploads, validates, resize, watermark and save images to disk.
+This easy to use library to uploads, validates, resize, watermark and save images to disk.
 
 [![License](https://img.shields.io/github/license/salmanbe/resize)](https://github.com/salmanbe/resize/blob/master/LICENSE)
 
 Depenencies
 ------------
 You must install following packages before installing this package.
+
 [Intervention Image](https://github.com/Intervention/image)
+
 [Perfect File Name](https://github.com/salmanbe/filename)
 
 Laravel Installation
