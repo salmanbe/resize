@@ -1,0 +1,40 @@
+{
+    "name": "salmanbe/resize",
+    "description": "This easy to use library uploads, validates, resize, watermark and save images to disk.",
+    "keywords": ["laravel", "image resize"],
+    "homepage": "https://github.com/salmanbe/resize",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "intervention/image": "^2.4",
+        "salmanbe/filename": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Salmanbe\\Resize\\": "src"
+        }
+    },
+    "authors": [
+        {
+            "name": "Salman Javaid",
+            "email": "salman@salman.be",
+            "homepage": "https://www.salman.be"
+        }
+    ],
+    "require": {
+        
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Salmanbe\\Resize\\ResizeServiceProvider"
+            ],
+            "aliases": {
+                "Resize": "Salmanbe\\Resize\\Resize"
+            }
+        }
+    }
+    
+}
