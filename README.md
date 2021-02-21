@@ -35,7 +35,7 @@ Run `php artisan vendor:publish --provider="Salmanbe\Resize\ResizeServiceProvide
 Basic Usage
 -----
 
-Add `use Salmanbe\Resize\Resize;` or `use Resize;` at top of the class where you want to use it.
+Add `use Salmanbe\Resize\Resize;` or `use Resize;` at top of the class where you want to use it. Then
 
 ```php
 $image = new Resize($request->image);

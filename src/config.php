@@ -4,58 +4,72 @@ return [
     
     /*
     |--------------------------------------------------------------------------
-    | Default timestamp option
+    | Allowed image types
     |--------------------------------------------------------------------------
     |
-    | If set to 'false' then no timestamp will be added at the end of file name.
-    | It is possible to change the timestamp format.
+    | List of allowed image extentions. Must be in lower case without '.'
     | This value can be overridden when calling the function.
     |
     */
-    'timestamp' => 'Y-m-d-His',
+    'mime_types' => [
+        'image/png',
+        'image/jpeg',
+        'image/gif'
+    ],
     
     /*
     |--------------------------------------------------------------------------
-    | Default file name length option
+    | Original image name
     |--------------------------------------------------------------------------
     |
-    | If set to 'false' then by default first 225 characters will be used.
-    | This value can be overridden when calling the function.
+    | If set to true then system will not generate pretty file name
+    | using salmanbe/Filename library.
     |
     */
-    'limit' => 225,
+    'original_name' => false,
     
     /*
     |--------------------------------------------------------------------------
-    | Default timestamp option
+    | Default maximum image upload size in MB
     |--------------------------------------------------------------------------
     |
-    | If set to 'true' then special charachters will be removed from the file name.
-    | This value can be overridden when calling the function.
+    | Define default maximum image upload size.
+    | This option should never be empty and size must be in MB.
     |
     */
-    'slugify' => true,
+    'max_image_size' => 10,
     
     /*
     |--------------------------------------------------------------------------
-    | Default file word separator option
+    | Default resize type
     |--------------------------------------------------------------------------
     |
-    | If set then it will be used as separator between file name words
+    | Default resize type applies to whole project
+    | Possible values  'canvas', 'crop', 'resize', 'original', 'center', 'fit'
     | This value can be overridden when calling the function.
     |
     */
-    'separator' => '-',
+    'resize_type' => 'canvas',
     
     /*
     |--------------------------------------------------------------------------
-    | Default file name case option
+    | Default transparent image path for water mark
     |--------------------------------------------------------------------------
     |
-    | If set to 'true' then file name will be in uppercase else lowercase
+    | Path to default transparent image path for water mark.
     | This value can be overridden when calling the function.
     |
     */
-    'uppercase' => false
+    'water_mark_image' => public_path('assets/transparant.png'),
     
+    /*
+    |--------------------------------------------------------------------------
+    | Default position of water mark image
+    |--------------------------------------------------------------------------
+    |
+    | The position of water mark.
+    | This value can be overridden when calling the function.
+    |
+    */
+    'water_mark_position' => 'top-center',
 ];
